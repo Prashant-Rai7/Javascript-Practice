@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <style>
+      #btn {
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: #531cd3;
+      }
+      #hello {
+        text-align: center;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function book(title, author) {
+        this.heading = "rekha";
+        this.writer = "ruskin";
+        console.log(this.heading)
+        console.log(this.writer)
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <h1 id="hello"></h1>
+    <button type="button" id="btn" onclick="sayHello()">Click</button>
+
+    <script language="javascript" type="text/javascript">
+      function sayHello() {
+        HII = document.getElementById("hello");
+        HII.innerHTML = "Welcome Prashant";
+      }
+    </script> -->
+
+    <!-- <script type="text/javascript">
+        var myBook = new book("Perl", "Mohtashim");
+      document.write("Book title is : " + myBook.heading + "<br>");
+      document.write("Book author is : " + myBook.writer + "<br>");
+
+    </script> -->
+
+    <script>
+      // var num = new Array(1,2,3,4)
+      let num  = [1,2,3,4,5,6]
+      // console.log(num, typeof num)
+      // let b = num.toString()
+      // console.log(b, typeof b)
+      // let c =  num.join("_")
+      // console.log(c, typeof c)
+      // console.log(num, num.pop())
+      // console.log(num, num.push(56))
+      // console.log(num, num.shift())
+      // console.log(num, num.unshift(0))
+      // console.log(num, num.length)
+      // delete num[0]
+      // console.log(num, num.length)
+      let num2=[9,7,0,"eat"]
+      let num3 = ['happu', 'dish']
+      // let newarr = num.concat(num2)
+      // console.log(newarr)
+      // console.log(num.concat(num2,num3))
+      let arr  = [1,20, "app", "1x",3,4,5,6]
+      // console.log(arr.sort())
+
+      // num.forEach((val) => {
+      //   console.log(val**2)
+      // })
+
+      // let res = num.map((value, index, array) => {
+      //   console.log(value, index, array)
+      //   return value+index
+      // })
+      // console.log(res)
+
+      // let a2 = num.filter((val) => {
+      //   // console.log(val)
+      //   return val<4
+      // })
+      // console.log(a2)
+
+      // let a3 = num.reduce((h1,h2) => {
+      //   console.log(h1,h2)
+      //   return h1+h2
+      // })
+      // console.log(a3)
+
+      let num1= -45.2;
+      // alert(Math.ceil(num1))
+      // alert(Math.floor(num1))
+      // alert(Math.round(num1))
+      // alert(Math.abs(num1))
+      // alert(Math.floor(Math.random(1,100)*100))
+
+      // const regex = /very/gi
+      // const regex = /./gi
+      // const regex =/\w/gi
+      // const regex =/\s/gi
+      // const regex =/\D/gi
+      // const regex =/^abc/gi
+      // const regex =/(?:abc)/gi
+      // const regex =/very{2}/gi
+
+
+
+
+      // let text = `abcsanjayabc is learning web eabcd devlopment is good and veryvery very abizar is vEry and verY goodabc`;
+      // let text = 'he3lo 4edo'
+      // console.log(text.replace("very", "harry"))
+      // console.log(text.replace(regex, "*"))
+
+      
+
+        const person = {
+          name : "MOsh",
+          last: "Josh",
+          walk() {
+            // console.log("HElloworld");
+            console.log(this);
+          }
+        };
+
+        // person.walk()
+        // person.name = "harry bhai"
+        // console.log(person.walk())
+        // console.log(person.walk)
+        // person['name'] = "Josh"
+        // person['name','last'] = ("Josh","hamed")
+
+        // const targetMember = 'name';
+        // person[targetMember] = "Josh"
+        // console.log(person)
+
+        // person.walk()
+        // const data = person.walk.bind(person)
+        // console.log(data)
+        // data()
+        
+        // let a=2, b=3;
+        // const func = (a,b) => {
+        //   return a+b
+        // } 
+        // console.log(this)
+
+          // const sr = function(num) {
+          //   return num**2;
+          // }
+          // console.log(sr(5))
+
+          const sr = num => num**2;
+          console.log(sr(5))
+
+    </script>
+  </body>
+</html>

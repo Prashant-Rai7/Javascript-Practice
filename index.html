@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Tutorials</title>
+    <style>
+      .mbox{
+         width: 100%;
+      }
+      #box{
+         width: 100px;
+         height: 100px;
+         background-color: tomato;
+         box-sizing: border-box;
+         text-align: center;
+      }
+      #mvbtn{
+         padding: 20px;
+         background-color: #41ff07;
+         color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="changeColor()">
+        Click for change color
+      </button>
+    <h1 id="demo"></h1>
+    <button onclick="document.getElementById('demo').innerHTML= Date()">
+      FOr Time
+    </button>
+    <form>
+      <input type="button" name="" id="" onclick="sayHello()" value="Button" />
+      <button type="button" onclick="document.write(5 + 6)">Try it</button>
+    </form>
+    <button onclick="window.print()">Print this page</button>
+    <a href="javascript:location.reload(true)">Refresh Page</a> 
+    
+    <button onclick="redirect()" target="_blank"> Click  here to redirect to new Website  </button>
+    <form>
+      <input type = "button" value = "click to get warning" onclick = "Warn();" />
+      <button onclick="printBtn()">Print</button>
+      <button onclick="window.print()">Inline Print</button>
+      <button onclick="hello()">Click to redirect</button>
+    </form>  
+    
+    <form  name = "myForm" onsubmit="validate()">
+      <table cellspacing = "2" cellpadding = "2" border = "1">
+         
+         <tr>
+            <td align = "right">Name</td>
+            <td><input type = "text" name = "Name" /></td>
+         </tr>
+         
+         <tr>
+            <td align = "right">EMail</td>
+            <td><input type = "text" name = "EMail" onchange="emialvalidat()"/></td>
+         </tr>
+         
+         <tr>
+            <td align = "right">Zip Code</td>
+            <td><input type = "text" name = "Zip" /></td>
+         </tr>
+         
+         <tr>
+            <td align = "right">Country</td>
+            <td>
+               <select name = "Country">
+                  <option value = "-1" selected>[choose yours]</option>
+                  <option value = "1">USA</option>
+                  <option value = "2">UK</option>
+                  <option value = "3">INDIA</option>
+               </select>
+            </td>
+         </tr>
+         
+         <tr>
+            <td align = "right"></td>
+            <td><input type = "submit" value = "Submit" /></td>
+         </tr>
+         
+      </table>
+   </form>      
+
+   <div class="mbox">
+      <div id="box">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum!</p>
+      </div>
+   </div>
+   <button id="mvbtn" type="button" onclick="moveRight()" value="start Right">Move Right</button>
+   <button id="mvbtn" type="button" onclick="stop()" value="stop Right">Stop</button>
+   <button id="mvbtn" type="button" onclick="moveleft()" value="move left">Move Left</button>
+    <script src="index.js"></script>
+  </body>
+</html>
